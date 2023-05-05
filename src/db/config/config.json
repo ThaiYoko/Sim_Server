@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "tra23225_admin",
+    "password": "sanglak123",
+    "database": "tra23225_sim",
+    "host": "112.78.2.102",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "tra23225_admin",
+    "password": "Eb-$_1Xh-ewT",
+    "database": "tra23225_sim",
+    "host": "112.78.2.102",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "tra23225_admin",
+    "password": "Eb-$_1Xh-ewT",
+    "database": "tra23225_sim",
+    "host": "112.78.2.102",
+    "dialect": "mysql"
+  }
+}
