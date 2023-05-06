@@ -2,12 +2,17 @@ const express = require("express");
 const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("cors");
+const path = require("path");
+
 const { root_router } = require("./src/router");
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cors());
+
+const publicPathDirectory = path.join(__dirname, "/src/public");
+app.use("/", express.static(publicPathDirectory));
 
 app.use("/api/v1", root_router);
 app.get("/", (req, res) => {

@@ -13,6 +13,7 @@ const Categorys = require("./categorys");
 const Productions = require("./productions");
 const Sims = require("./sims");
 const Reviews = require("./reviews");
+const Banners = require("./banners");
 
 let sequelize;
 if (config.use_env_variable) {
@@ -45,6 +46,7 @@ db.Categorys = Categorys(sequelize, Sequelize);
 db.Productions = Productions(sequelize, Sequelize);
 db.Sims = Sims(sequelize, Sequelize);
 db.Reviews = Reviews(sequelize, Sequelize);
+db.Banners = Banners(sequelize, Sequelize);
 
 Object.keys(db).forEach((modelName) => {
   if (db[modelName].associate) {
