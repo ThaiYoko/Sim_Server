@@ -8,15 +8,19 @@ module.exports = {
       [
         {
           name: "Sim Châu Á",
+          url: "sim_chau_a",
         },
         {
           name: "Sim Châu Âu - Mỹ",
+          url: "sim_chau_au_my",
         },
         {
           name: "Sim Châu Úc - Phi",
+          url: "sim_chau_uc_phi",
         },
         {
           name: "ESIM",
+          url: "esim",
         },
       ],
       {}

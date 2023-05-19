@@ -9,7 +9,9 @@ const data_controller = {
   load_data: async (req, res) => {
     try {
       const list_banner = await Banners.findAll();
-      const listCate = await Categorys.findAll();
+      const listCate = await Categorys.findAll({
+        include: [{ model: Productions, include: [{ model: Sims }] }],
+      });
       const listProduction = await Productions.findAll({
         include: [{ model: Categorys }],
       });
@@ -19,7 +21,6 @@ const data_controller = {
 
       const hot_sim = await Sims.findAll({
         include: [{ model: Productions, include: [{ model: Categorys }] }],
-        order: [["selled", "desc"]],
         limit: 6,
       });
 

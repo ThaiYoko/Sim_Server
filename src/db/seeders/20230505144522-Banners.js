@@ -7,11 +7,11 @@ module.exports = {
       "Banners",
       [
         {
-          url: "http://localhost:3005/img/banner/banner1.jpg",
+          url: "https://events.travelsimshop.vn/img/banner/banner1.jpg",
           filename: "banner1.jpg",
         },
         {
-          url: "http://localhost:3005/img/banner/banner2.jpg",
+          url: "https://events.travelsimshop.vn/img/banner/banner2.jpg",
           filename: "banner2.jpg",
         },
       ],

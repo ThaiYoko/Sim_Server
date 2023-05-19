@@ -9,33 +9,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      name: {
-        type: Sequelize.STRING,
-      },
-      expiry: {
-        type: Sequelize.INTEGER,
-      },
-      size_data: {
-        type: Sequelize.STRING,
-      },
-      telco: {
-        type: Sequelize.STRING,
-      },
-      limit: {
-        type: Sequelize.STRING,
-      },
-      wifi_hostpot: {
-        type: Sequelize.BOOLEAN,
-        defaultValue: true,
-      },
-      call: {
-        type: Sequelize.BOOLEAN,
-        defaultValue: false,
-      },
-      size_sim: {
-        type: Sequelize.STRING,
-        defaultValue: "sim thường/ micro/ nano",
-      },
       idProduct: {
         type: Sequelize.INTEGER,
         references: {
@@ -43,24 +16,71 @@ module.exports = {
           key: "id",
         },
       },
-      avatar: {
+      url: {
         type: Sequelize.STRING,
       },
-      order: {
-        type: Sequelize.INTEGER,
-        defaultValue: 0,
+      name: {
+        type: Sequelize.STRING,
       },
-      inventory: {
+      total_data: {
         type: Sequelize.INTEGER,
-        defaultValue: 1,
       },
-      selled: {
+      price: {
+        type: Sequelize.STRING,
+      },
+      discount: {
+        type: Sequelize.FLOAT,
+      },
+      speed_data: {
+        type: Sequelize.STRING,
+      },
+      advantage: {
+        type: Sequelize.STRING,
+      },
+      expiry: {
         type: Sequelize.INTEGER,
-        defaultValue: 0,
+      },
+      active: {
+        type: Sequelize.BOOLEAN,
+      },
+      telco: {
+        type: Sequelize.STRING,
+      },
+      size_sim: {
+        type: Sequelize.STRING,
+      },
+      limit: {
+        type: Sequelize.STRING,
+      },
+      hotspot: {
+        type: Sequelize.BOOLEAN,
+      },
+      call: {
+        type: Sequelize.BOOLEAN,
+      },
+      surplus: {
+        type: Sequelize.STRING,
+      },
+      use_call: {
+        type: Sequelize.TEXT,
+      },
+      use_data: {
+        type: Sequelize.TEXT,
+      },
+      use_manual: {
+        type: Sequelize.TEXT,
       },
       common: {
         type: Sequelize.BOOLEAN,
-        defaultValue: false,
+      },
+      number_selled: {
+        type: Sequelize.INTEGER,
+      },
+      number_order: {
+        type: Sequelize.INTEGER,
+      },
+      number_inventory: {
+        type: Sequelize.INTEGER,
       },
       createdAt: {
         allowNull: false,
