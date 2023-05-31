@@ -29,7 +29,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       discount: {
-        type: Sequelize.FLOAT,
+        type: Sequelize.STRING,
       },
       speed_data: {
         type: Sequelize.STRING,

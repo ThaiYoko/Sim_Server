@@ -21,11 +21,9 @@ module.exports = (sequelize, DataTypes) => {
       note: DataTypes.TEXT,
       bill: DataTypes.TEXT,
       code_bill: DataTypes.STRING,
-      fees_ship: DataTypes.STRING,
-      total_vat: DataTypes.STRING,
-      total_price: DataTypes.STRING,
       total: DataTypes.STRING,
       status: DataTypes.STRING,
+      url_image: DataTypes.STRING,
     },
     {
       sequelize,

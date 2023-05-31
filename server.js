@@ -3,13 +3,20 @@ const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("cors");
 const path = require("path");
+const cookieParser = require("cookie-parser");
 
 const { root_router } = require("./src/router");
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://travelsimshop.vn", "http://localhost:3000", "*"],
+    credentials: true,
+  })
+);
+app.use(cookieParser());
 
 const publicPathDirectory = path.join(__dirname, "/src/public");
 app.use("/", express.static(publicPathDirectory));

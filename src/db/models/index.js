@@ -15,6 +15,9 @@ const Sims = require("./sims");
 const Reviews = require("./reviews");
 const Banners = require("./banners");
 const Orders = require("./orders");
+const RefreshTokens = require("./refreshtokens");
+const Logos = require("./logos");
+const TravelSimShopContacts = require("./simcontact");
 
 let sequelize;
 if (config.use_env_variable) {
@@ -49,6 +52,9 @@ db.Sims = Sims(sequelize, Sequelize);
 db.Reviews = Reviews(sequelize, Sequelize);
 db.Banners = Banners(sequelize, Sequelize);
 db.Orders = Orders(sequelize, Sequelize);
+db.RefreshTokens = RefreshTokens(sequelize, Sequelize);
+db.Logos = Logos(sequelize, Sequelize);
+db.TravelSimShopContacts = TravelSimShopContacts(sequelize, Sequelize);
 
 Object.keys(db).forEach((modelName) => {
   if (db[modelName].associate) {

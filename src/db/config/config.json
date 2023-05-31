@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "sim",
-    "host": "localhost",
+    "username": "tra23225_admin",
+    "password": "sanglak123",
+    "database": "tra23225_sim",
+    "host": "112.78.2.102",
     "dialect": "mysql"
   },
   "test": {
